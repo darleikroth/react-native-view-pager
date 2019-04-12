@@ -11,11 +11,11 @@ import {
 interface Props {
   count: number;
   selectedIndex: number;
-  onSelectedIndexChange?: (index: number) => void;
-  scrollEnabled?: boolean;
-  bounces?: boolean;
-  children?: any;
-  style?: ViewStyle;
+  scrollEnabled: boolean;
+  bounces: boolean;
+  children: JSX.Element | JSX.Element[];
+  style: ViewStyle;
+  onSelectedIndexChange(index: number): void;
 }
 
 interface State {
@@ -60,7 +60,7 @@ class ViewPager extends React.Component<Props, State> {
         style={[styles.scrollview, this.props.style]}
         horizontal={true}
         pagingEnabled={true}
-        bounces={!!this.props.bounces}
+        bounces={this.props.bounces}
         scrollsToTop={false}
         onScroll={this.handleHorizontalScroll}
         scrollEventThrottle={100}

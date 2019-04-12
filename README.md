@@ -12,6 +12,12 @@ yarn add @iume/react-native-view-pager
 
 ### Properties
 
-Name | Description | Type | Default
---- | --- | --- | ---
-`containerStyle` | Style for fields container. | `ViewStyle` |
+Name | Type
+--- | ---
+`count` | `number`
+`selectedIndex` | `number`
+`bounces` | `boolean`
+`scrollEnabled` | `scrollEnabled`
+`children` | `JSX.Element` \| `JSX.Element[]`
+`style` | `ViewStyle`
+`onSelectedIndexChange` | `(index: number) => void`
