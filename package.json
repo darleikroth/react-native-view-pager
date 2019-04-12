@@ -1,0 +1,25 @@
+{
+  "name": "@iume/react-native-view-pager",
+  "version": "1.0.0",
+  "description": "ViewPager component for react-native on both Android and IOS",
+  "main": "src/view-pager.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/darleikroth/react-native-view-pager.git"
+  },
+  "keywords": [
+    "react",
+    "native",
+    "view",
+    "pager"
+  ],
+  "author": "Darlei Kroth <darlei@pm.me> (https://github.com/darleikroth)",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/darleikroth/react-native-view-pager/issues"
+  },
+  "homepage": "https://github.com/darleikroth/react-native-view-pager#readme"
+}
